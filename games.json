@@ -1,0 +1,62 @@
+[
+  {
+    "id": "dichotomous-key",
+    "title": "ไดโคโตมัสคีย์",
+    "category": "biology",
+    "level": "ม.6",
+    "description": "ฝึกจำแนกสิ่งมีชีวิตด้วยการสร้างและอ่านไดโคโตมัสคีย์",
+    "coverEmoji": "🌿",
+    "coverColor": "#dcecff",
+    "url": "https://script.google.com/macros/s/AKfycbyp2pV494RV_nfrHvPzRt3LR9uNT6f4KMQHVXGPnhMMuAHmJHMKyetlwNdiL73Urbqt/exec"
+  },
+  {
+    "id": "digestive-system",
+    "title": "ครัวพิศดาร: เกมระบบย่อยอาหาร",
+    "category": "biology",
+    "level": "ชีววิทยา",
+    "description": "เรียนรู้เส้นทางอาหารและหน้าที่ของอวัยวะในระบบย่อยอาหาร",
+    "coverEmoji": "🍳",
+    "coverColor": "#ffe4e9",
+    "url": "https://script.google.com/macros/s/AKfycby2vPJxu_5zcJMDdUDbbRuN15mCGNwpLQVmx8oFUYfVbsFmqQQIdTY-YVnbN3z9h7p7tQ/exec"
+  },
+  {
+    "id": "sandwich-equation",
+    "title": "ร้านแซนด์วิชดุลสมการ",
+    "category": "chemistry",
+    "level": "เคมี",
+    "description": "ฝึกดุลสมการเคมีผ่านภารกิจร้านแซนด์วิช",
+    "coverEmoji": "🥪",
+    "coverColor": "#fff0dc",
+    "url": "https://script.google.com/macros/s/AKfycbw8HqpNSiF2TB7AkqK4vgwmXBDFJxD01MQlAq487bQzt3el7IOh7TqFBkG4XNa6FLXUxw/exec"
+  },
+  {
+    "id": "excretory-clinic",
+    "title": "คลินิกพิเศษ: ระบบขับถ่าย",
+    "category": "biology",
+    "level": "ชีววิทยา",
+    "description": "เรียนรู้ระบบขับถ่ายและการรักษาดุลยภาพของร่างกาย",
+    "coverEmoji": "🩺",
+    "coverColor": "#e4f5e9",
+    "url": "https://script.google.com/macros/s/AKfycby3J1_tURCT829Fhb6V12du57yijnTtTqvNOobsAj5Gf5I2obvAMcw-ktW9cjI6kXu7aw/exec"
+  },
+  {
+    "id": "temperature-cafe",
+    "title": "Temperature Café",
+    "category": "physics",
+    "level": "ฟิสิกส์",
+    "description": "ฝึกทักษะเรื่องอุณหภูมิและการเปลี่ยนหน่วยผ่านเกมคาเฟ่",
+    "coverEmoji": "🌡️",
+    "coverColor": "#e8e1ff",
+    "url": "https://script.google.com/macros/s/AKfycbzLPu4Mxaf8FHcg45-84w09pEYXtuTRxrs7f6_ySCasIXQGGOGIBSjnwt6TAJSJM6Jl/exec"
+  },
+  {
+    "id": "ultra-smoothie",
+    "title": "Ultra Smoothie Café",
+    "category": "chemistry",
+    "level": "ม.3",
+    "description": "เรียนรู้เรื่องปฏิกิริยาเคมีผ่านภารกิจการปรุงสมูทตี้",
+    "coverEmoji": "🥤",
+    "coverColor": "#d9f3e7",
+    "url": "https://script.google.com/macros/s/AKfycbxSOtFveVb1XPxUhCj2M8914kvV9M5QWQfmm8Sjm9i6vO4SdqIskPrzfxqBzxst7hLv/exec"
+  }
+]
