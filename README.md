@@ -1,15 +1,17 @@
-# KRUPOY GAME HUB
+# KRUPOY GAME HUB — Storybook Edition
 
-## Deploy ด้วย Vercel
-1. สร้าง GitHub repository ชื่อ `krupoy-game-hub`
-2. อัปโหลด `index.html`, `games.json`, `README.md` ไว้ในระดับบนสุด (root)
-3. เข้า https://vercel.com แล้วเลือก Add New → Project
-4. เชื่อม GitHub หากยังไม่เคยเชื่อม และ Import repository `krupoy-game-hub`
-5. Framework Preset เลือก `Other`
-6. Build Command เว้นว่าง และ Output Directory ใช้ `.` (หรือค่าเริ่มต้นของ Vercel สำหรับ static site)
-7. กด Deploy แล้วเปิด URL ที่ Vercel แสดง
+## ไฟล์ที่ต้องอัปโหลดขึ้น GitHub
+- `index.html`
+- `games.json`
+- โฟลเดอร์ `assets/` (มีภาพทีมตัวละครและภาพหน้าปกเกม 6 ภาพ)
+
+## Deploy บน Vercel
+1. อัปโหลดไฟล์และโฟลเดอร์ทั้งหมดไว้ที่ root ของ GitHub repository `krupoy-game-hub`
+2. Commit changes
+3. ใน Vercel เปิดโปรเจกต์เดิม แล้ว Deploy ใหม่จาก GitHub (หรือรอ auto deployment)
+4. Framework Preset: Other; Build Command ว่าง; Output Directory ใช้ `.` หรือค่าเริ่มต้น
 
 ## เพิ่มเกม
-แก้ไข `games.json` เพิ่ม object ใหม่ โดยใช้ category: `biology`, `physics`, `chemistry`, `science`, `other` แล้ว commit ขึ้น GitHub เพื่อให้ Vercel deploy อัตโนมัติ
-
-เกมทั้ง 6 เกมยังอยู่บน Google Apps Script URL เดิม เว็บไซต์ HUB ทำหน้าที่รวมลิงก์เท่านั้น
+เพิ่มรายการใหม่ใน `games.json` โดยใช้ category `biology`, `chemistry`, `physics`, `science` หรือ `other` และกำหนด `level` เป็น array เช่น `["ม.3"]`
+ภาพปกต้องอยู่ใน `assets/` และใส่ path ใน `cover`
+เกมเดิมทั้ง 6 เกมยังคงใช้ Google Apps Script URL เดิม
