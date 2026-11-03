@@ -3,10 +3,46 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#fff8f4">
-<title>KRUPOY GAME HUB — โลกนิทานแห่งการเรียนรู้</title>
+<title>KRUPOY GAME HUB — โลกแห่งการเรียนรู้</title>
 <meta name="description" content="คลังเกมการเรียนรู้วิทยาศาสตร์ พัฒนาโดย KRUPOY"><meta name="theme-color" content="#fff8f4">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Mali:wght@400;500;600;700&display=swap" rel="stylesheet">
+/* KRUPOY Background Music */
+.music-control {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 15px;
+  border: 1px solid #eadcf5;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #fff, #f5eaff);
+  color: #7654a0;
+  box-shadow: 0 5px 18px #7654a033;
+  font-family: Kanit, sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.music-control:hover {
+  transform: translateY(-2px);
+}
+
+.music-control.playing {
+  background: linear-gradient(135deg, #a77ad8, #8964c3);
+  color: white;
+}
+
+@media(max-width:560px) {
+  .music-control {
+    right: 12px;
+    bottom: 14px;
+    padding: 9px 13px;
+  }
+}
 <style>
 :root{--ink:#493b61;--muted:#887e98;--purple:#8f69c8;--line:#eee4f1;--cream:#fffaf2;--pink:#f7dce9;--mint:#dff1e5;--blue:#deedfa;--gold:#f8e7b9}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Kanit,sans-serif;background:linear-gradient(120deg,#fff9f3,#fff5fb,#f2f4ff,#f2fbff,#fff7ef);background-size:300% 300%;animation:storybookSky 32s ease-in-out infinite;overflow-x:hidden;position:relative}
@@ -37,11 +73,54 @@ footer{margin-top:55px;background:linear-gradient(120deg,#e9ddfb,#f8e5f2 55%,#e6
 @media(max-width:560px){.wrap{padding:0 14px}.brand{font-size:14px}.brand-icon{width:46px;height:46px;flex-basis:46px}.nav{align-items:center}.navlinks{display:none}.hero{padding-top:18px}.hero-panel{border-radius:22px}.hero-copy{padding:25px 20px 0}.hero-art{min-height:165px}.hero-art img{max-height:185px}h1{font-size:31px}.hero-copy p{font-size:13px}.grid{gap:11px}.cover{height:125px}.game-body{padding:11px}.game-title{font-size:14px}.game-desc{font-size:11px;min-height:54px}.play{font-size:11px;padding:9px}.section-title{font-size:21px}.search{width:100%}.search input{width:100%;max-width:none}.section-head{align-items:flex-start}.tiny-note{display:none}}
 @media(max-width:360px){.grid{grid-template-columns:1fr}.cover{height:170px}}
 </style></head>
+<!-- KRUPOY Background Music -->
+<audio id="hubMusic"
+       src="assets/krupoy-game-hub-background-music.mp3"
+       loop
+       preload="none"></audio>
+
+<button id="musicButton" class="music-control"
+        type="button" aria-label="เปิดเพลงพื้นหลัง">
+  <span id="musicIcon">🎵</span>
+  <span id="musicText">เปิดเพลง</span>
+</button>
+
+<script>
+(() => {
+  const music = document.getElementById("hubMusic");
+  const button = document.getElementById("musicButton");
+  const icon = document.getElementById("musicIcon");
+  const label = document.getElementById("musicText");
+
+  music.volume = 0.25;
+
+  button.addEventListener("click", async () => {
+    if (music.paused) {
+      try {
+        await music.play();
+        button.classList.add("playing");
+        icon.textContent = "🎶";
+        label.textContent = "ปิดเพลง";
+        button.setAttribute("aria-label", "ปิดเพลงพื้นหลัง");
+      } catch (error) {
+        label.textContent = "เล่นเพลงไม่ได้";
+        console.error("Music playback error:", error);
+      }
+    } else {
+      music.pause();
+      button.classList.remove("playing");
+      icon.textContent = "🎵";
+      label.textContent = "เปิดเพลง";
+      button.setAttribute("aria-label", "เปิดเพลงพื้นหลัง");
+    }
+  });
+})();
+</script>
 <body>
 <header><div class="wrap nav"><a class="brand" href="#"><img class="brand-icon" src="assets/krupoy-logo.png" alt="โลโก้ Biology กับครูปอย"><span>KRUPOY <span style="color:#a875b9">GAME HUB</span></span></a><nav class="navlinks"><a class="active" href="#">หน้าแรก</a><a href="#games">เกมทั้งหมด</a><a href="#games">ตามระดับชั้น</a><a href="#games">ตามหมวดวิชา</a></nav><span class="tiny-note">🌷 Play • Learn • Explore</span></div></header>
 <main class="wrap">
 <section class="hero"><div class="hero-panel"><div class="hero-copy"><span class="ribbon">✨ โลกนิทานแห่งการเรียนรู้</span><h1>ออกผจญภัยในโลก<br><span>วิทยาศาสตร์แสนสนุก!</span></h1><p>ชวนทุกคนมาเปิดประตูสู่โลกแห่งการค้นพบ เล่นเกม ทำภารกิจ และเรียนรู้วิทยาศาสตร์ไปกับทีมเพื่อนนักทดลอง KRUPOY</p><div class="hero-actions"><a class="primary" href="#games">🎮 เลือกเกมผจญภัย</a><a class="secondary" href="#games">ดูเกมทั้งหมด ↓</a></div></div><div class="hero-art"><img src="assets/storybook-team.jpg" alt="ทีมเด็กนักวิทยาศาสตร์ chibi ในโลกนิทาน"><span class="spark s1">⭐</span><span class="spark s2">🌼</span><span class="spark s3">🧪</span></div></div></section>
-<div class="quick-row"><div class="stats"><span class="stat">🕹️ <b id="count">6</b> เกมพร้อมเล่น</span><span class="stat">📚 ครอบคลุมหลายระดับชั้น</span><span class="stat">📱 เล่นได้ทุกอุปกรณ์</span></div><span class="tiny-note">พัฒนาโดย KRUPOY 💜</span></div>
+<div class="quick-row"><div class="stats"><span class="stat">🕹️ <b id="count">7</b> เกมพร้อมเล่น</span><span class="stat">📚 ครอบคลุมหลายระดับชั้น</span><span class="stat">📱 เล่นได้ทุกอุปกรณ์</span></div><span class="tiny-note">พัฒนาโดย KRUPOY 💜</span></div>
 <section class="section" id="games"><div class="section-head"><div><h2 class="section-title">เลือกภารกิจของคุณ 🌈</h2><p class="section-sub">เลือกเกมที่สนใจ แล้วเริ่มต้นการผจญภัยได้เลย</p></div><div class="tools"><label class="search"><span>🔎</span><input id="search" type="search" placeholder="ค้นหาชื่อเกมหรือเนื้อหา..."></label></div></div>
 <div class="filters" id="subjectFilters"><button class="chip active" data-subject="all">🌟 ทุกหมวดวิชา</button><button class="chip" data-subject="biology">🌿 ชีววิทยา</button><button class="chip" data-subject="chemistry">⚗️ เคมี</button><button class="chip" data-subject="physics">🌡️ ฟิสิกส์</button></div>
 <div class="filters" id="gradeFilters"><button class="chip active" data-grade="all">ทุกระดับชั้น</button><button class="chip" data-grade="ม.1">ม.1</button><button class="chip" data-grade="ม.2">ม.2</button><button class="chip" data-grade="ม.3">ม.3</button><button class="chip" data-grade="ม.4">ม.4</button><button class="chip" data-grade="ม.5">ม.5</button><button class="chip" data-grade="ม.6">ม.6</button></div>
