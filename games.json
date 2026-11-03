@@ -78,5 +78,14 @@
     "cover": "assets/ultra-smoothie.jpg",
     "url": "https://script.google.com/macros/s/AKfycbxSOtFveVb1XPxUhCj2M8914kvV9M5QWQfmm8Sjm9i6vO4SdqIskPrzfxqBzxst7hLv/exec",
     "featured": true
-  }
+  },
+  {
+  "id": "kingdom-defense",
+  "title": "Kingdom Defense",
+  "category": "biology",
+  "level": ["ม.4"],
+  "description": "ปกป้องอาณาจักร พร้อมเรียนรู้เรื่องสิ่งมีชีวิต",
+  "cover": "assets/kingdom-defense.jpg",
+  "url": "https://kingdom-defense-phi.vercel.app",
+  "featured": true
 ]
