@@ -69,24 +69,38 @@
   },
   {
     "id": "ultra-smoothie",
-    "title": "Ultra Smoothie Café",
+    "title": "Ultra Smoothie Café By KRUPOY",
     "category": "chemistry",
     "level": [
       "ม.3"
     ],
-    "description": "เรียนรู้เรื่องปฏิกิริยาเคมีผ่านภารกิจการปรุงสมูทตี้",
+    "description": "เรียนรู้เรื่องปฏิกิริยาเคมีผ่านภารกิจการปรุงสมูทตี้ในคาเฟ่",
     "cover": "assets/ultra-smoothie.jpg",
-    "url": "https://ultra-smoothie-cafe.vercel.app",
+    "url": "https://ultra-smoothie-cafe.vercel.app/",
     "featured": true
   },
   {
-  "id": "kingdom-defense",
-  "title": "Kingdom Defense",
-  "category": "biology",
-  "level": ["ม.4"],
-  "description": "ปกป้องอาณาจักร พร้อมเรียนรู้เรื่องสิ่งมีชีวิต",
-  "cover": "assets/kingdom-defense.jpg",
-  "url": "https://kingdom-defense-phi.vercel.app",
-  "featured": true
+    "id": "kingdom-defense",
+    "title": "Kingdom Defense",
+    "category": "biology",
+    "level": [
+      "ม.4"
+    ],
+    "description": "ปกป้องอาณาจักร พร้อมเรียนรู้เรื่องสิ่งมีชีวิต",
+    "cover": "assets/kingdom-defense.jpg",
+    "url": "https://kingdom-defense-phi.vercel.app",
+    "featured": true
+  },
+  {
+    "id": "star-defense",
+    "title": "Star Defense by KRUPOY",
+    "category": "physics",
+    "level": [
+      "ทุกระดับ"
+    ],
+    "description": "เกม Tower Defense ปกป้องอาณาจักรดวงดาวด้วยป้อมพิทักษ์ พร้อมตอบคำถามดาราศาสตร์ 10 ข้อ",
+    "cover": "assets/star-defense.jpg",
+    "url": "https://star-defense-by-krupoy.vercel.app/",
+    "featured": true
   }
 ]
