@@ -30,9 +30,7 @@
     "title": "ร้านแซนด์วิชดุลสมการ",
     "category": "chemistry",
     "level": [
-      "ม.4",
-      "ม.5",
-      "ม.6"
+     "ม.3"
     ],
     "description": "ฝึกดุลสมการเคมีผ่านภารกิจร้านแซนด์วิช",
     "cover": "assets/sandwich-equation.jpg",
@@ -112,6 +110,18 @@
   ],
   "description": "ทบทวนระบบหมุนเวียนเลือดผ่านภารกิจวินิจฉัยและช่วยเหลือผู้ป่วยฉุกเฉิน",
   "cover": "assets/emergency-duty.png",
+  "url": "https://cute-er-game.vercel.app/",
+  "featured": true
+},
+{
+  "id": "genetic-quest",
+  "title": "Genetic quest by KRUPOY",
+  "category": "biology",
+  "level": [
+    "ม.4"
+  ],
+  "description": "ทบทวนการจำลองดีเอ็นเอ การถอดรหัส การแปลรหัส พร้อมเรียนรู้คำศัพท์ทางพันธุศาสตร์",
+  "cover": "assets/genetic-quest.png",
   "url": "https://cute-er-game.vercel.app/",
   "featured": true
 }
