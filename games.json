@@ -124,5 +124,17 @@
   "cover": "assets/genetic-quest.png",
   "url": "https://genetics-quest.vercel.app/",
   "featured": true
+},
+{
+  "id": "respiratory-quest",
+  "title": "ปุยปุยบินฝ่าหอคอย by KRUPOY",
+  "category": "biology",
+  "level": [
+    "ม.5"
+  ],
+  "description": "เรียนรู้ระบบหายใจผ่านเกมบินหลบท่อ เก็บกล่องของขวัญ และตอบคำถาม",
+  "cover": "assets/respiratory-quest.png",
+  "url": "https://puipui-flight.vercel.app/",
+  "featured": true
 }
 ]
