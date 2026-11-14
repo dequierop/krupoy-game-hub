@@ -136,5 +136,17 @@
   "cover": "assets/respiratory-quest.png",
   "url": "https://puipui-flight.vercel.app/",
   "featured": true
+},
+{
+  "id": "abyss-protectors",
+  "title": "ABYSS PROTECTORS by Krupoy ภารกิจพิทักษ์ทะเล",
+  "category": "science",
+  "level": [
+    "ม.3"
+  ],
+  "description": "ดำดิ่ง เก็บขยะ แยกพอลิเมอร์ แล้วช่วยให้ทะเลกลับมาสดใส",
+  "cover": "assets/abyss-protectors.png",
+  "url": "https://abyss-protectors-by-krupoy.vercel.app/",
+  "featured": true
 }
 ]
